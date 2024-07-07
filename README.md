@@ -1,5 +1,5 @@
 # How do you like to play?
 
-Use the playlist to share your preferences with a new play partner. You can create one here : 
+Use the playlist to share your preferences as a couple with a new couple, or publish it to your favorite site.
 
-Easily create [play list](https://purplecouple.github.io/PlayList/v1.0.0.html)
+Create a new [play list](https://purplecouple.github.io/PlayList/v1.0.0.html)
