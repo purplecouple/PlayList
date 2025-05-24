@@ -236,32 +236,80 @@
             }
             @media (max-width: 597px) {
                 body {
-                    font-size: 10px;
+                    font-size: 14px;
+                }
+                h2 {
+                    font-size: 1.3em;
+                    margin-bottom: 8px;
                 }
                 table {
                     min-width: 345px;
                 }
                 .legend div {
-                    width: 150px;
-                    padding-bottom: 10px;
-                    padding-left: 10px;
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 8px;
+                    padding-left: 0;
+                    padding-bottom: 5px;
+                    box-sizing: border-box;
                 }
                 #ExportWrapper {
                     position: relative;
-                    margin-top: 10px;
-                    margin-left: 0px;
-                    width: 345px;
+                    width: 95%;
+                    max-width: 345px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 15px;
                 }
                 #URL {
-                    left: 155px;
-                    width: 190px;
-                    font-size: 10px;
+                    width: 100%;
+                    position: relative;
+                    left: auto;
+                    top: auto;
+                    font-size: 13px;
+                    margin-top: 5px;
+                    box-sizing: border-box;
                 }
                 #Export {
-                    left: 0px;
+                    left: 0px; /* This was already here, keeping it */
                 }
                 #Loading {
-                    left: 230px;
+                    position: relative;
+                    left: auto;
+                    display: block;
+                    margin: 8px auto;
+                    text-align: center;
+                    top: auto;
+                    font-size: 1em; /* Or 14px, 1em is relative to parent body font-size */
+                }
+                th.choicesCol {
+                    width: 100px;
+                }
+                #EditOverlay #Kinks {
+                    width: 90%;
+                    max-width: 330px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-left: 0;
+                }
+                #EditOverlay #KinksOK {
+                    width: 90%;
+                    max-width: 330px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-left: 0;
+                    font-size: 16px;
+                }
+                #InputOverlay .widthWrapper {
+                    width: 95%;
+                    max-width: none; /* Allow it to shrink fully */
+                    box-sizing: border-box;
+                }
+                #InputOverlay .widthWrapper #InputCurrent h2 {
+                    font-size: 1.2em;
+                }
+                #InputOverlay .widthWrapper #InputCurrent h3 {
+                    font-size: 1em;
                 }
             }
             @keyframes spin {
