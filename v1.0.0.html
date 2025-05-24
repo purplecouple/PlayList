@@ -147,7 +147,7 @@
                 text-transform: uppercase;
                 background-color: #4980ae;
                 font-size: 18px;
-                width: 150px;
+                width: 200px;
                 height: 36px;
                 border-style: none;
                 border-radius: 4px;
@@ -806,8 +806,10 @@
                         inputKinks.placeCategories($categories);
                         
                         // Make things update hash
-                        $('#InputList').find('button.choice').on('click', function(){
+                        $('#InputList').find('button.choice').on('click', function(event){ // It's good practice to pass the event object
+                            var currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
                             location.hash = inputKinks.updateHash();
+                            window.scrollTo(0, currentScrollY);
                         });
                     },
                     init: function(){
